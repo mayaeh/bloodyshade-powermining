@@ -24,10 +24,10 @@ public class CraftItemHammer {
 	public JavaPlugin plugin;
 	public static String loreString = "SMASH!";
 
-	ItemStack WoodHammer = new ItemStack(Material.WOOD_PICKAXE, 1);
+	ItemStack WoodHammer = new ItemStack(Material.WOODEN_PICKAXE, 1);
 	ItemStack StoneHammer = new ItemStack(Material.STONE_PICKAXE, 1);
 	ItemStack IronHammer = new ItemStack(Material.IRON_PICKAXE, 1);
-	ItemStack GoldHammer = new ItemStack(Material.GOLD_PICKAXE, 1);
+	ItemStack GoldHammer = new ItemStack(Material.GOLDEN_PICKAXE, 1);
 	ItemStack DiamondHammer = new ItemStack(Material.DIAMOND_PICKAXE, 1);
 
 	ShapedRecipe WoodHammerRecipe;
@@ -83,8 +83,8 @@ public class CraftItemHammer {
 		DiamondHammerRecipe = new ShapedRecipe(DiamondHammer);
 
 		WoodHammerRecipe.shape(" m ", "mim", " m ");
-		WoodHammerRecipe.setIngredient('m', Material.LOG);
-		WoodHammerRecipe.setIngredient('i', Material.WOOD_PICKAXE);
+		WoodHammerRecipe.setIngredient('m', Material.OAK_LOG);
+		WoodHammerRecipe.setIngredient('i', Material.WOODEN_PICKAXE);
 
 		StoneHammerRecipe.shape(" m ", "mim", " m ");
 		StoneHammerRecipe.setIngredient('m', Material.STONE);
@@ -96,7 +96,7 @@ public class CraftItemHammer {
 
 		GoldHammerRecipe.shape(" m ", "mim", " m ");
 		GoldHammerRecipe.setIngredient('m', Material.GOLD_INGOT);
-		GoldHammerRecipe.setIngredient('i', Material.GOLD_PICKAXE);
+		GoldHammerRecipe.setIngredient('i', Material.GOLDEN_PICKAXE);
 
 		DiamondHammerRecipe.shape(" m ", "mim", " m ");
 		DiamondHammerRecipe.setIngredient('m', Material.DIAMOND);

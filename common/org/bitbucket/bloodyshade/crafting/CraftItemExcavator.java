@@ -24,11 +24,11 @@ public class CraftItemExcavator {
 	public JavaPlugin plugin;
 	public static String loreString = "POUND!";
 
-	ItemStack WoodExcavator = new ItemStack(Material.WOOD_SPADE, 1);
-	ItemStack StoneExcavator = new ItemStack(Material.STONE_SPADE, 1);
-	ItemStack IronExcavator = new ItemStack(Material.IRON_SPADE, 1);
-	ItemStack GoldExcavator = new ItemStack(Material.GOLD_SPADE, 1);
-	ItemStack DiamondExcavator = new ItemStack(Material.DIAMOND_SPADE, 1);
+	ItemStack WoodExcavator = new ItemStack(Material.WOODEN_SHOVEL, 1);
+	ItemStack StoneExcavator = new ItemStack(Material.STONE_SHOVEL, 1);
+	ItemStack IronExcavator = new ItemStack(Material.IRON_SHOVEL, 1);
+	ItemStack GoldExcavator = new ItemStack(Material.GOLDEN_SHOVEL, 1);
+	ItemStack DiamondExcavator = new ItemStack(Material.DIAMOND_SHOVEL, 1);
 
 	ShapedRecipe WoodExcavatorRecipe;
 	ShapedRecipe StoneExcavatorRecipe;
@@ -83,24 +83,24 @@ public class CraftItemExcavator {
 		DiamondExcavatorRecipe = new ShapedRecipe(DiamondExcavator);
 
 		WoodExcavatorRecipe.shape(" m ", "mim", " m ");
-		WoodExcavatorRecipe.setIngredient('m', Material.LOG);
-		WoodExcavatorRecipe.setIngredient('i', Material.WOOD_SPADE);
+		WoodExcavatorRecipe.setIngredient('m', Material.OAK_LOG);
+		WoodExcavatorRecipe.setIngredient('i', Material.WOODEN_SHOVEL);
 
 		StoneExcavatorRecipe.shape(" m ", "mim", " m ");
 		StoneExcavatorRecipe.setIngredient('m', Material.STONE);
-		StoneExcavatorRecipe.setIngredient('i', Material.STONE_SPADE);
+		StoneExcavatorRecipe.setIngredient('i', Material.STONE_SHOVEL);
 
 		IronExcavatorRecipe.shape(" m ", "mim", " m ");
 		IronExcavatorRecipe.setIngredient('m', Material.IRON_INGOT);
-		IronExcavatorRecipe.setIngredient('i', Material.IRON_SPADE);
+		IronExcavatorRecipe.setIngredient('i', Material.IRON_SHOVEL);
 
 		GoldExcavatorRecipe.shape(" m ", "mim", " m ");
 		GoldExcavatorRecipe.setIngredient('m', Material.GOLD_INGOT);
-		GoldExcavatorRecipe.setIngredient('i', Material.GOLD_SPADE);
+		GoldExcavatorRecipe.setIngredient('i', Material.GOLDEN_SHOVEL);
 
 		DiamondExcavatorRecipe.shape(" m ", "mim", " m ");
 		DiamondExcavatorRecipe.setIngredient('m', Material.DIAMOND);
-		DiamondExcavatorRecipe.setIngredient('i', Material.DIAMOND_SPADE);
+		DiamondExcavatorRecipe.setIngredient('i', Material.DIAMOND_SHOVEL);
 	}
 
 	// Registers all created recipes into the game

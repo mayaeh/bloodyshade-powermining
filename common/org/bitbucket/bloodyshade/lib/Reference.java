@@ -26,12 +26,12 @@ public class Reference {
 		Material.STONE,
 		Material.COAL_ORE,
 		Material.REDSTONE_ORE,
-		Material.GLOWING_REDSTONE_ORE,
+//		Material.GLOWING_REDSTONE_ORE,
 		Material.LAPIS_ORE,
 		Material.DIAMOND_ORE,
 		Material.EMERALD_ORE,
 		Material.ICE,
-		Material.QUARTZ_ORE,
+		Material.NETHER_QUARTZ_ORE,
 		Material.GLOWSTONE
 	));
 
@@ -39,7 +39,7 @@ public class Reference {
 		Material.GRASS,
 		Material.CLAY,
 		Material.SNOW_BLOCK,
-		Material.MYCEL,
+		Material.MYCELIUM,
 		Material.GLOWSTONE
 	));
 
@@ -49,11 +49,11 @@ public class Reference {
 
 		MINABLE_FORTUNE.put(Material.COAL_ORE, Material.COAL);
 		MINABLE_FORTUNE.put(Material.REDSTONE_ORE, Material.REDSTONE);
-		MINABLE_FORTUNE.put(Material.GLOWING_REDSTONE_ORE, Material.REDSTONE);
-		MINABLE_FORTUNE.put(Material.LAPIS_ORE, Material.INK_SACK);
+//		MINABLE_FORTUNE.put(Material.GLOWING_REDSTONE_ORE, Material.REDSTONE);
+		MINABLE_FORTUNE.put(Material.LAPIS_ORE, Material.INK_SAC);
 		MINABLE_FORTUNE.put(Material.DIAMOND_ORE, Material.DIAMOND);
 		MINABLE_FORTUNE.put(Material.EMERALD_ORE, Material.EMERALD);
-		MINABLE_FORTUNE.put(Material.QUARTZ_ORE, Material.QUARTZ);
+		MINABLE_FORTUNE.put(Material.NETHER_QUARTZ_ORE, Material.QUARTZ);
 		MINABLE_FORTUNE.put(Material.GLOWSTONE, Material.GLOWSTONE_DUST);
 	};
 
@@ -66,18 +66,18 @@ public class Reference {
 	};
 
 	public static ArrayList<Material> PICKAXES = new ArrayList<Material>(Arrays.asList(
-		Material.WOOD_PICKAXE,
+		Material.WOODEN_PICKAXE,
 		Material.STONE_PICKAXE,
 		Material.IRON_PICKAXE,
-		Material.GOLD_PICKAXE,
+		Material.GOLDEN_PICKAXE,
 		Material.DIAMOND_PICKAXE
 	));
 
 	public static ArrayList<Material> SPADES = new ArrayList<Material>(Arrays.asList(
-		Material.WOOD_SPADE,
-		Material.STONE_SPADE,
-		Material.IRON_SPADE,
-		Material.GOLD_SPADE,
-		Material.DIAMOND_SPADE
+		Material.WOODEN_SHOVEL,
+		Material.STONE_SHOVEL,
+		Material.IRON_SHOVEL,
+		Material.GOLDEN_SHOVEL,
+		Material.DIAMOND_SHOVEL
 	));
 }

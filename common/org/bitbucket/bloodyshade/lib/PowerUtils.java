@@ -135,14 +135,14 @@ public class PowerUtils {
 
 						break;
 					case REDSTONE_ORE: // Redstone Ore drops 4-5 dust, up to 8 max
-					case GLOWING_REDSTONE_ORE:
-						amount = Math.min((rand.nextInt(2) + 4) + enchantLevel, 8);
+//					case GLOWING_REDSTONE_ORE:  // by maya: Glowing Redstone Ore is nothing at 1.13 ?
+//						amount = Math.min((rand.nextInt(2) + 4) + enchantLevel, 8);
 
-						break;
+//						break;
 					case COAL_ORE: // All these ores drop only 1 item
 					case DIAMOND_ORE:
 					case EMERALD_ORE:
-					case QUARTZ_ORE:
+					case NETHER_QUARTZ_ORE:
 						amount = getAmountPerFortune(enchantLevel, 1);
 						break;
 					case LAPIS_ORE: // Lapis Ore drops 4-8 lapis, up to 32 max
@@ -237,7 +237,7 @@ public class PowerUtils {
 		boolean canCraft = false;
 
 		switch (itemType) {
-			case WOOD_PICKAXE:
+			case WOODEN_PICKAXE:
 				if (player.hasPermission("powermining.craft.hammer.wood"))
 					canCraft = true;
 
@@ -252,7 +252,7 @@ public class PowerUtils {
 					canCraft = true;
 
 				break;
-			case GOLD_PICKAXE:
+			case GOLDEN_PICKAXE:
 				if (player.hasPermission("powermining.craft.hammer.gold"))
 					canCraft = true;
 
@@ -262,27 +262,27 @@ public class PowerUtils {
 					canCraft = true;
 
 				break;
-			case WOOD_SPADE:
+			case WOODEN_SHOVEL:
 				if (player.hasPermission("powermining.craft.excavator.wood"))
 					canCraft = true;
 
 				break;
-			case STONE_SPADE:
+			case STONE_SHOVEL:
 				if (player.hasPermission("powermining.craft.excavator.stone"))
 					canCraft = true;
 
 				break;
-			case IRON_SPADE:
+			case IRON_SHOVEL:
 				if (player.hasPermission("powermining.craft.excavator.iron"))
 					canCraft = true;
 
 				break;
-			case GOLD_SPADE:
+			case GOLDEN_SHOVEL:
 				if (player.hasPermission("powermining.craft.excavator.gold"))
 					canCraft = true;
 
 				break;
-			case DIAMOND_SPADE:
+			case DIAMOND_SHOVEL:
 				if (player.hasPermission("powermining.craft.excavator.diamond"))
 					canCraft = true;
 
@@ -298,7 +298,7 @@ public class PowerUtils {
 		boolean canUse = false;
 
 		switch (player.getItemInHand().getType()) {
-			case WOOD_PICKAXE:
+			case WOODEN_PICKAXE:
 				if (player.hasPermission("powermining.use.hammer.wood"))
 					canUse = true;
 
@@ -313,7 +313,7 @@ public class PowerUtils {
 					canUse = true;
 
 				break;
-			case GOLD_PICKAXE:
+			case GOLDEN_PICKAXE:
 				if (player.hasPermission("powermining.use.hammer.gold"))
 					canUse = true;
 
@@ -323,27 +323,27 @@ public class PowerUtils {
 					canUse = true;
 
 				break;
-			case WOOD_SPADE:
+			case WOODEN_SHOVEL:
 				if (player.hasPermission("powermining.use.excavator.wood"))
 					canUse = true;
 
 				break;
-			case STONE_SPADE:
+			case STONE_SHOVEL:
 				if (player.hasPermission("powermining.use.excavator.stone"))
 					canUse = true;
 
 				break;
-			case IRON_SPADE:
+			case IRON_SHOVEL:
 				if (player.hasPermission("powermining.use.excavator.iron"))
 					canUse = true;
 
 				break;
-			case GOLD_SPADE:
+			case GOLDEN_SHOVEL:
 				if (player.hasPermission("powermining.use.excavator.gold"))
 					canUse = true;
 
 				break;
-			case DIAMOND_SPADE:
+			case DIAMOND_SHOVEL:
 				if (player.hasPermission("powermining.use.excavator.diamond"))
 					canUse = true;
 
@@ -360,7 +360,7 @@ public class PowerUtils {
 		boolean canEnchant = false;
 
 		switch (itemType) {
-			case WOOD_PICKAXE:
+			case WOODEN_PICKAXE:
 				if (player.hasPermission("powermining.enchant.hammer.wood"))
 					canEnchant = true;
 
@@ -375,7 +375,7 @@ public class PowerUtils {
 					canEnchant = true;
 
 				break;
-			case GOLD_PICKAXE:
+			case GOLDEN_PICKAXE:
 				if (player.hasPermission("powermining.enchant.hammer.gold"))
 					canEnchant = true;
 
@@ -385,27 +385,27 @@ public class PowerUtils {
 					canEnchant = true;
 
 				break;
-			case WOOD_SPADE:
+			case WOODEN_SHOVEL:
 				if (player.hasPermission("powermining.enchant.excavator.wood"))
 					canEnchant = true;
 
 				break;
-			case STONE_SPADE:
+			case STONE_SHOVEL:
 				if (player.hasPermission("powermining.enchant.excavator.stone"))
 					canEnchant = true;
 
 				break;
-			case IRON_SPADE:
+			case IRON_SHOVEL:
 				if (player.hasPermission("powermining.enchant.excavator.iron"))
 					canEnchant = true;
 
 				break;
-			case GOLD_SPADE:
+			case GOLDEN_SHOVEL:
 				if (player.hasPermission("powermining.enchant.excavator.gold"))
 					canEnchant = true;
 
 				break;
-			case DIAMOND_SPADE:
+			case DIAMOND_SHOVEL:
 				if (player.hasPermission("powermining.enchant.excavator.diamond"))
 					canEnchant = true;
 
@@ -430,9 +430,9 @@ public class PowerUtils {
 
 		// Check for GriefPrevention build rights
 		if (gp != null && (gp instanceof GriefPrevention)) {
-			Claim claim = GriefPrevention.instance.dataStore.getClaimAt(block.getLocation(), true);
+//			Claim claim = GriefPrevention.instance.dataStore.getClaimAt(block.getLocation(), true);
 
-			if (claim != null && claim.allowBreak(player, block) != null)
+//			if (claim != null && claim.allowBreak(player, block) != null)
 				return false;
 		}
 

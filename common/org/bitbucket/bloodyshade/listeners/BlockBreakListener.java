@@ -100,7 +100,7 @@ public class BlockBreakListener implements Listener {
 
 					// Snowballs do not drop if you just breakNaturally(), so this needs to be special parsed
 					if (blockMat == Material.SNOW && useExcavator) {
-						ItemStack snow = new ItemStack(Material.SNOW_BALL, 1 + e.getData());
+						ItemStack snow = new ItemStack(Material.SNOWBALL, 1 + e.getData());
 						e.getWorld().dropItemNaturally(blockLoc, snow);
 					}
 
