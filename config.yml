@@ -6,16 +6,37 @@ useDurabilityPerBlock: false
 Minable:
  - COBBLESTONE: [any]
  - STONE: [any]
- - BRICK: [any]
+ - GRANITE: [any]
+ - POLISHED_GRANITE: [any]
+ - DIORITE: [any]
+ - POLISHED_DIORITE: [any]
+ - ANDESITE: [any]
+ - POLISHED_ANDESITE: [any]
+ - BRICKS: [any]
  - MOSSY_COBBLESTONE: [any]
  - COAL_ORE: [any]
  - SANDSTONE: [any]
- - ENDER_STONE: [any]
+ - END_STONE: [any]
  - NETHERRACK: [any]
- - NETHER_BRICK: [any]
- - QUARTZ_ORE: [any]
- - STAINED_CLAY: [any]
- - HARD_CLAY: [any]
+ - NETHER_BRICKS: [any]
+ - NETHER_QUARTZ_ORE: [any]
+ - WHITE_TERRACOTTA: [any]
+ - ORANGE_TERRACOTTA: [any]
+ - MAGENTA_TERRACOTTA: [any]
+ - LIGHT_BLUE_TERRACOTTA: [any]
+ - YELLOW_TERRACOTTA: [any]
+ - LIME_TERRACOTTA: [any]
+ - PINK_TERRACOTTA: [any]
+ - GRAY_TERRACOTTA: [any]
+ - LIGHT_GRAY_TERRACOTTA: [any]
+ - CYAN_TERRACOTTA: [any]
+ - PURPLE_TERRACOTTA: [any]
+ - BLUE_TERRACOTTA: [any]
+ - BROWN_TERRACOTTA: [any]
+ - GREEN_TERRACOTTA: [any]
+ - RED_TERRACOTTA: [any]
+ - BLACK_TERRACOTTA: [any]
+ - TERRACOTTA: [any]
  - GLOWSTONE: [any]
  - OBSIDIAN: [DIAMOND_PICKAXE]
  - REDSTONE_ORE: [IRON_PICKAXE, DIAMOND_PICKAXE]
@@ -36,14 +57,17 @@ Minable:
 
 # These define the blocks that can be dug by the excavator
 Diggable:
- - GRASS
+ - GRASS_BLOCK
  - DIRT
+ - COARSE_DIRT
+ - PODZOL
  - SAND
+ - RED_SAND
  - GRAVEL
  - CLAY
  - SOUL_SAND
  - SNOW_BLOCK
  - SNOW
- - MYCEL
- - SOIL
+ - MYCELIUM
+ - FARMLAND
  - GLOWSTONE
