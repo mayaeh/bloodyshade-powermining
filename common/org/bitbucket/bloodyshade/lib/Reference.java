@@ -36,7 +36,7 @@ public class Reference {
 	));
 
 	public static ArrayList<Material> DIGGABLE_SILKTOUCH = new ArrayList<Material>(Arrays.asList(
-		Material.GRASS,
+		Material.GRASS_BLOCK,
 		Material.CLAY,
 		Material.SNOW_BLOCK,
 		Material.MYCELIUM,
